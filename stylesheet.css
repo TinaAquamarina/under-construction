@@ -42,6 +42,11 @@ table {
 	border-spacing: 0;
 }
 
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
   color: #ffffff;
   background-color: #111111;
@@ -55,7 +60,6 @@ body {
   margin-left: 8%;
   width: 100%;
   height: 100%;
-  
 }
 
 .logo {
@@ -96,7 +100,6 @@ p {
   font-weight: 300;
   padding-top: 24px;
   width: 100%;
-  /* font-style: italic; */
 }
 
 .copyright {
@@ -119,4 +122,182 @@ canvas {
   background-color: none;
   overflow: hidden;
 }
+
+
+/* MEDIA QUERIES */
+
+/* IPHONE 5/SE */
+
+@media screen
+and (min-width: 320px)
+and (max-width: 568px)
+and (orientation: portrait) {
+
+  body {
+    color: #ffffff;
+    background-color: #111111;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    min-height: 0px;
+  }
+  
+  .content {
+    margin-left: 8%;
+    width: 100%;
+    height: 300px;
+  }
+
+  .logo {
+    margin-left: 24px;
+    margin-top: 24px;
+    padding-bottom: 106px;
+  }
+  
+  .main-text {
+    padding-top: 24px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #ffaa00;
+    font-weight: 900;
+  }
+
+  .main-text p span::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .secondary-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 300;
+    padding-top: 24px;
+    width: 100%;
+  }
+
+  .copyright {
+    color: rgba(255, 255, 255, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    margin-left: 24px;
+    position: absolute;
+    bottom: 4%;
+  }
+
+  canvas {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+}
+
+
+@media screen 
+and (min-width: 360px)
+and (max-width: 640px)
+and (orientation: portrait)  {
+
+  canvas {
+    display: none;
+  }
+
+}
+
+
+/* IPHONE 6 / 7 / 8 */
+
+@media screen 
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: portrait) {
+
+}
+
+/* IPHONE X */
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+}
+
+/* LANDSCAPE */
+
+@media only screen
+and (max-height: 414px)
+and (orientation: landscape) {
+    
+}
+
+@media only screen
+and (max-height: 375px)
+and (orientation: landscape) {
+
+}
+
+@media only screen
+and (max-height: 360px)
+and (orientation: landscape) {
+
+}
+
+
+
+/* MIN HEIGHTS */
+
+@media only screen
+and (min-height: 731px) {
+
+}
+
+@media only screen
+and (min-height: 812px) {
+
+}
+
+@media only screen
+and (min-height: 823px)
+and (orientation: portrait) {
+
+}
+
+@media only screen
+and (min-height: 768px) {
+
+}
+
+@media only screen
+and (min-height: 900px) {
+
+}
+
+@media only screen
+and (min-height: 1024px) {
+
+}
+
+
+@media only screen
+and (min-height: 1366px) {
+
+}
+
+@media only screen
+and (min-width: 240px)
+and (max-width: 1366px) {
+
+    body {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+      }
+}
+
+
 

@@ -9,7 +9,7 @@
   // more siblings == bigger node
   SIBLINGS_LIMIT = 10;
   // default node margin
-  DENSITY = 50;
+  DENSITY = 80;
   // total number of nodes used (incremented after creation)
   NODES_QTY = 0;
   // avoid nodes spreading
