@@ -96,14 +96,14 @@ p {
 .secondary-text {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 21px;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.2);
   font-weight: 300;
   padding-top: 24px;
   width: 100%;
 }
 
 .copyright {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.2);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -137,7 +137,7 @@ and (orientation: portrait) {
     color: #ffffff;
     background-color: #111111;
     height: 100vh;
-    width: 100%;
+    width: auto;
     position: absolute;
     min-height: 0px;
   }
@@ -172,14 +172,14 @@ and (orientation: portrait) {
   .secondary-text {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.2);
     font-weight: 300;
     padding-top: 24px;
     width: 100%;
   }
 
   .copyright {
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.2);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 10px;
@@ -233,19 +233,31 @@ and (orientation : portrait) {
 @media only screen
 and (max-height: 414px)
 and (orientation: landscape) {
-    
+  canvas {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+  }
 }
 
 @media only screen
 and (max-height: 375px)
 and (orientation: landscape) {
-
+  canvas {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+  }
 }
 
 @media only screen
 and (max-height: 360px)
 and (orientation: landscape) {
-
+  canvas {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+  }
 }
 
 
@@ -293,10 +305,6 @@ and (min-height: 1366px) {
 and (min-width: 240px)
 and (max-width: 1366px) {
 
-    body {
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-      }
 }
 
 
