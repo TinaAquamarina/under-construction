@@ -140,6 +140,8 @@ and (orientation: portrait) {
     width: auto;
     position: absolute;
     min-height: 0px;
+    background-image: url('./img/Abstract-Nodes-15.png');
+    background-size: 1200px 1200px;
   }
   
   .content {
@@ -216,6 +218,17 @@ and (min-width: 375px)
 and (max-width: 667px)
 and (orientation: portrait) {
 
+  body {
+    color: #ffffff;
+    background-color: #111111;
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    min-height: 0px;
+    background-image: url('./img/Abstract-Nodes-15.png');
+    background-size: 1400px 1400px;
+  }
+
 }
 
 /* IPHONE X */
@@ -225,6 +238,17 @@ and (min-width : 375px)
 and (max-width : 812px) 
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
+
+  body {
+    color: #ffffff;
+    background-color: #111111;
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    min-height: 0px;
+    background-image: url('./img/Abstract-Nodes-15.png');
+    background-size: 1500px 1500px;
+  }
 
 }
 
@@ -240,6 +264,8 @@ and (orientation: landscape) {
     /* width: auto; */
     height: auto;
     position: absolute;
+    background-image: url('./img/Abstract-Nodes-15.png');
+    background-size: 1000px 1000px;
   }
 
   .content {
@@ -270,15 +296,11 @@ and (orientation: landscape) {
     font-size: 10px;
     top: 16%;
     bottom: 0px;
-    right: 0px;
-    /* left: 110%; */
     right: 0%;
     position: absolute;
     height: 10px;
     width: 65px;
     margin: 0;
-    /* right: -50px;
-    left: 0px; */
     transform: rotate(90deg);
   }
 
